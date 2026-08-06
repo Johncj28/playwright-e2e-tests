@@ -11,7 +11,11 @@
   "author": "cope automation",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "demo": "npx playwright test tests/demo/demo.spec.ts --headed",
+    "test": "npx playwright test",
+    "login": "npx playwright test tests/functional/login.spec.ts --headed"
+  },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@types/node": "^26.1.2"
